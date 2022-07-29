@@ -3,7 +3,7 @@ const cors = require('cors')
 const dotenv = require('dotenv').config()
 const {errorHandler} = require('./Middleware/errorHanlder')
 const connectDB = require('./config/db')
-const port = 7878
+const port = process.env.PORT || 7878
 
 connectDB()
 
