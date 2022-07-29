@@ -20,8 +20,9 @@ app.get("*", (req, res) => {
   res.send({
     message: "good"
   })
-};
+})
 
-app.use(errorHandler);
 
-app.listen(port, () => console.log(`Server is running at port ${port}`))
+  app.use(errorHandler);
+
+  app.listen(port, () => console.log(`Server is running at port ${port}`))
